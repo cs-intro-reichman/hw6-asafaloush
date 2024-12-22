@@ -13,13 +13,18 @@ public class Editor2 {
 		String fileName = args[0];
 		int width = Integer.parseInt(args[1]);
 		int height = Integer.parseInt(args[2]);
+		// Reads the input image and creates an empty output image
 		Color[][] imageIn = Runigram.read(fileName);	
-		Color[][] imageOut = new Color[height][width];
-		imageOut = Runigram.scaled(imageIn, width, height);
+		Color[][] imageOut = Runigram.scaled(imageIn, width, height);	
+		// Applies the specified image processing function										
+		
+		// Creates a canvas in which both images will be displayed, one after the other.
+		// Next, displays the input image, and pauses for a few seconds. 
+		// Finally, displays the output image.
+		// (Notice that both images have the same dimensions).
 		Runigram.setCanvas(imageIn);
 		Runigram.display(imageIn);
 		StdDraw.pause(3000); 
 		Runigram.setCanvas(imageOut);
-		Runigram.display(imageOut);			
-	}
+		Runigram.display(imageOut);
 }
