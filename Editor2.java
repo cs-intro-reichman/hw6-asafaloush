@@ -16,7 +16,6 @@ public class Editor2 {
 		Color[][] imageIn = Runigram.read(fileName);	
 		Color[][] imageOut = new Color[height][width];
 		imageOut = Runigram.scaled(imageIn, width, height);
-		
 		Runigram.setCanvas(imageIn);
 		Runigram.display(imageIn);
 		StdDraw.pause(3000); 
