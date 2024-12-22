@@ -71,10 +71,10 @@ public class TesterRunigram {
         }
 
 
-        // Color[][] img = Runigram.scaled(safeRead("eyes.ppm"), 241, 209);
-        // Color[][] img = Runigram.blend(safeRead("escher.ppm"), safeRead("eyes.ppm"), 0.21);
-        // int a = 2;
-        // savePPM("blend_021.ppm", img);
+        Color[][] img = Runigram.scaled(safeRead("eyes.ppm"), 241, 209);
+        //Color[][] img = Runigram.blend(safeRead("escher.ppm"), safeRead("eyes.ppm"), 0.21);
+        //int a = 2;
+        savePPM("blend_021.ppm", img);
         
     }
 
